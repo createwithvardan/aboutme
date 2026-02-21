@@ -520,7 +520,8 @@ section:nth-child(even) {
   color: var(--text-2);
   transition: var(--transition);
 }
-.skill-tag i { font-size: 0.75rem; }
+.skill-tag i { font-size: 0.9rem; }
+.skill-tag i[class*="devicon"] { font-size: 1.1rem; }
 .skill-tag:hover {
   border-color: var(--accent);
   color: var(--accent);

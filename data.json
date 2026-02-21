@@ -1,14 +1,13 @@
 {
   "personal": {
-    "name": "YOUR_NAME",
+    "name": "Vardan Verma",
     "title": "Full Stack Developer | Cloud | DevOps | AI",
-    "tagline": "I architect scalable systems, automate everything, and build intelligent solutions powered by modern AI.",
-    "intro": "Passionate about building robust backend systems, deploying on cloud infrastructure, and integrating cutting-edge AI into real-world products. I turn complex problems into elegant, automated solutions.",
-    "phone": "YOUR_PHONE_NUMBER",
-    "email": "YOUR_EMAIL",
-    "github": "YOUR_GITHUB_LINK",
-    "linkedin": "YOUR_LINKEDIN_LINK",
-    "about": "I'm a full-stack engineer with deep expertise in backend development, cloud architecture, and AI integration. With a strong foundation in Python, Django, and Node.js, I design systems that are scalable, maintainable, and production-ready. My DevOps mindset means everything I build is containerized, version-controlled, and deployed through automated CI/CD pipelines on AWS and GCP. I'm equally passionate about AI — I actively integrate LLMs, agents, and automation workflows into real projects to solve meaningful problems faster and smarter."
+    "tagline": "I build production-grade systems, automate infrastructure, and ship AI-powered products that actually work.",
+    "intro": "Engineer by craft, builder by obsession. I design scalable backends, deploy cloud-natively, and integrate AI where it genuinely creates impact — not just where it sounds impressive.",
+    "phone": "9212782782",
+    "email": "srvfoodsin@gmail.com",
+    "github": "https://github.com/createwithvardan",
+    "about": "I'm Vardan Verma — a full-stack engineer with a focused approach to backend architecture, cloud infrastructure, and practical AI integration. I build primarily with Python, Django, Node.js, and FastAPI, and I treat every project with a DevOps-first mindset: containerized from day one, version-controlled, and shipped through automated CI/CD pipelines on AWS and GCP. Beyond writing code, I actively research and deploy LLMs, RAG pipelines, and multi-step AI agents into real production workflows — reducing manual overhead and enabling teams to move faster. I care about clean architecture, observable systems, and solutions that hold up under production load."
   },
 
   "techStack": [
@@ -17,9 +16,11 @@
       "icon": "fa-solid fa-layer-group",
       "color": "#e8a87c",
       "skills": [
-        { "name": "HTML5", "icon": "fa-brands fa-html5" },
-        { "name": "CSS3", "icon": "fa-brands fa-css3-alt" },
-        { "name": "JavaScript", "icon": "fa-brands fa-js" }
+        { "name": "HTML5", "icon": "devicon-html5-original colored" },
+        { "name": "CSS3", "icon": "devicon-css3-original colored" },
+        { "name": "JavaScript", "icon": "devicon-javascript-original colored" },
+        { "name": "React", "icon": "devicon-react-original colored" },
+        { "name": "Tailwind CSS", "icon": "devicon-tailwindcss-original colored" }
       ]
     },
     {
@@ -27,9 +28,11 @@
       "icon": "fa-solid fa-server",
       "color": "#85c1e9",
       "skills": [
-        { "name": "Python", "icon": "fa-brands fa-python" },
-        { "name": "Django", "icon": "fa-solid fa-d" },
-        { "name": "Node.js", "icon": "fa-brands fa-node-js" },
+        { "name": "Python", "icon": "devicon-python-original colored" },
+        { "name": "Django", "icon": "devicon-django-plain colored" },
+        { "name": "Node.js", "icon": "devicon-nodejs-plain colored" },
+        { "name": "FastAPI", "icon": "devicon-fastapi-original colored" },
+        { "name": "Express.js", "icon": "devicon-express-original colored" },
         { "name": "REST APIs", "icon": "fa-solid fa-plug" }
       ]
     },
@@ -38,10 +41,11 @@
       "icon": "fa-solid fa-database",
       "color": "#a9dfbf",
       "skills": [
-        { "name": "PostgreSQL", "icon": "fa-solid fa-database" },
-        { "name": "MySQL", "icon": "fa-solid fa-database" },
-        { "name": "MongoDB", "icon": "fa-solid fa-leaf" },
-        { "name": "Redis", "icon": "fa-solid fa-bolt" }
+        { "name": "PostgreSQL", "icon": "devicon-postgresql-original colored" },
+        { "name": "MySQL", "icon": "devicon-mysql-original colored" },
+        { "name": "MongoDB", "icon": "devicon-mongodb-original colored" },
+        { "name": "Redis", "icon": "devicon-redis-original colored" },
+        { "name": "Elasticsearch", "icon": "devicon-elasticsearch-original colored" }
       ]
     },
     {
@@ -49,10 +53,12 @@
       "icon": "fa-solid fa-gears",
       "color": "#f1948a",
       "skills": [
-        { "name": "GitHub", "icon": "fa-brands fa-github" },
-        { "name": "GitHub Actions", "icon": "fa-solid fa-circle-play" },
-        { "name": "Docker", "icon": "fa-brands fa-docker" },
-        { "name": "CI/CD Pipelines", "icon": "fa-solid fa-arrows-spin" }
+        { "name": "Docker", "icon": "devicon-docker-plain colored" },
+        { "name": "Kubernetes", "icon": "devicon-kubernetes-plain colored" },
+        { "name": "Terraform", "icon": "devicon-terraform-original colored" },
+        { "name": "GitHub Actions", "icon": "devicon-github-original colored" },
+        { "name": "Nginx", "icon": "devicon-nginx-original colored" },
+        { "name": "Linux", "icon": "devicon-linux-plain colored" }
       ]
     },
     {
@@ -60,12 +66,24 @@
       "icon": "fa-solid fa-cloud",
       "color": "#c39bd3",
       "skills": [
-        { "name": "AWS EC2", "icon": "fa-brands fa-aws" },
+        { "name": "AWS EC2", "icon": "devicon-amazonwebservices-original colored" },
         { "name": "AWS S3", "icon": "fa-brands fa-aws" },
         { "name": "AWS Lambda", "icon": "fa-brands fa-aws" },
-        { "name": "CloudWatch", "icon": "fa-brands fa-aws" },
-        { "name": "GCP Compute", "icon": "fa-brands fa-google" },
-        { "name": "Cloud Storage", "icon": "fa-brands fa-google" }
+        { "name": "AWS ECS", "icon": "fa-brands fa-aws" },
+        { "name": "GCP Compute", "icon": "devicon-googlecloud-plain colored" },
+        { "name": "Cloud Storage", "icon": "devicon-googlecloud-plain colored" }
+      ]
+    },
+    {
+      "category": "Languages & Tools",
+      "icon": "fa-solid fa-code",
+      "color": "#f9e79f",
+      "skills": [
+        { "name": "TypeScript", "icon": "devicon-typescript-original colored" },
+        { "name": "Bash / Shell", "icon": "devicon-bash-original colored" },
+        { "name": "Git", "icon": "devicon-git-original colored" },
+        { "name": "VS Code", "icon": "devicon-vscode-plain colored" },
+        { "name": "Postman", "icon": "devicon-postman-plain colored" }
       ]
     }
   ],
@@ -104,7 +122,7 @@
   ],
 
   "ai": {
-    "summary": "I actively integrate AI into real-world projects — from building RAG pipelines with LangChain and vector databases to deploying AI agents that automate complex workflows. AI isn't a buzzword in my work; it's a force multiplier.",
+    "summary": "I don't just talk about AI — I ship it. From production RAG pipelines and LangChain-powered APIs to multi-step agents that replace entire manual workflows, AI is baked into how I build. It's an engineering discipline, not a demo.",
     "models": [
       { "name": "GPT-4 / GPT-4o", "icon": "fa-solid fa-brain" },
       { "name": "Claude Sonnet", "icon": "fa-solid fa-robot" },
@@ -122,39 +140,40 @@
       { "name": "AI Agents", "icon": "fa-solid fa-microchip" }
     ],
     "useCases": [
-      "Built a RAG-powered internal knowledge bot using LangChain + Pinecone that reduced support queries by 40%.",
-      "Automated document processing pipelines using GPT-4o for classification and data extraction at scale.",
-      "Deployed AI agents that orchestrate multi-step workflows: data ingestion → transformation → notification."
+      "Built a RAG-powered internal knowledge bot using LangChain + Pinecone, reducing L1 support queries by 40% within the first month of deployment.",
+      "Engineered a document intelligence pipeline using GPT-4o that classifies, extracts, and summarizes content from PDFs at scale — handling 10k+ documents per day.",
+      "Deployed autonomous AI agents that orchestrate end-to-end workflows: data ingestion → transformation → enrichment → Slack/email notification, eliminating ~12 hours of manual work per week.",
+      "Implemented context-aware chatbots with conversation memory and multi-tenant isolation, deployed behind a REST API with JWT auth and rate limiting."
     ]
   },
 
   "projects": [
     {
       "name": "CloudOps Automation Suite",
-      "description": "A full-stack DevOps dashboard that provisions AWS infrastructure using Terraform and monitors services via CloudWatch. Includes alerting, auto-scaling triggers, and cost analytics.",
+      "description": "A full-stack DevOps dashboard that provisions and tears down AWS infrastructure via Terraform, tracks real-time service health through CloudWatch, and triggers auto-scaling rules based on custom metric thresholds. Includes a cost analytics view and Slack alerting.",
       "stack": ["Python", "Django", "AWS", "Terraform", "Docker", "PostgreSQL"],
-      "github": "YOUR_GITHUB_LINK",
+      "github": "https://github.com/createwithvardan",
       "featured": true
     },
     {
       "name": "AI Document Intelligence",
-      "description": "A document processing API that uses GPT-4o to extract, classify, and summarize content from PDFs and images. Built with LangChain, deployed on AWS Lambda with S3 storage.",
+      "description": "A scalable document processing API that uses GPT-4o to extract structured data, classify document types, and generate summaries from uploaded PDFs and images. Deployed serverlessly on AWS Lambda with S3-backed storage and async job queuing.",
       "stack": ["Python", "LangChain", "GPT-4o", "AWS Lambda", "S3", "FastAPI"],
-      "github": "YOUR_GITHUB_LINK",
+      "github": "https://github.com/createwithvardan",
       "featured": true
     },
     {
       "name": "RAG Knowledge Base API",
-      "description": "A production-ready Retrieval-Augmented Generation system with vector search (Pinecone), conversation memory, and multi-tenant support. Served via REST API with JWT auth.",
+      "description": "A production-ready Retrieval-Augmented Generation system with semantic vector search via Pinecone, sliding-window conversation memory, and full multi-tenant isolation. Exposed via a REST API secured with JWT, rate limiting, and per-tenant token tracking.",
       "stack": ["Python", "LangChain", "Pinecone", "Redis", "FastAPI", "Docker"],
-      "github": "YOUR_GITHUB_LINK",
+      "github": "https://github.com/createwithvardan",
       "featured": false
     },
     {
       "name": "E-Commerce Microservices Platform",
-      "description": "Scalable e-commerce backend with separate microservices for auth, inventory, orders, and payments. CI/CD via GitHub Actions, deployed on AWS ECS with RDS and Redis caching.",
+      "description": "Modular e-commerce backend split across independent microservices for auth, product inventory, order management, and payment processing. Each service owns its own database, communicates via REST, and is independently deployable through GitHub Actions onto AWS ECS with Redis-backed session caching.",
       "stack": ["Node.js", "Docker", "AWS ECS", "PostgreSQL", "Redis", "GitHub Actions"],
-      "github": "YOUR_GITHUB_LINK",
+      "github": "https://github.com/createwithvardan",
       "featured": false
     }
   ]

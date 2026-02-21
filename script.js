@@ -143,12 +143,6 @@
       value: 'View Profile',
       href: personal.github
     },
-    {
-      icon: 'fa-brands fa-linkedin',
-      label: 'LinkedIn',
-      value: 'Connect',
-      href: personal.linkedin
-    },
   ].map(c => `
     <div class="contact-card reveal">
       <div class="contact-icon"><i class="${c.icon}"></i></div>
@@ -163,7 +157,6 @@
   el('footer-copy').textContent = `© ${new Date().getFullYear()} ${personal.name}. All rights reserved.`;
   el('footer-links').innerHTML = `
     <a href="${personal.github}" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-    <a href="${personal.linkedin}" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
   `;
 
   /* ─────────────────────────────────────────────────
