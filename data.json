@@ -1,0 +1,161 @@
+{
+  "personal": {
+    "name": "YOUR_NAME",
+    "title": "Full Stack Developer | Cloud | DevOps | AI",
+    "tagline": "I architect scalable systems, automate everything, and build intelligent solutions powered by modern AI.",
+    "intro": "Passionate about building robust backend systems, deploying on cloud infrastructure, and integrating cutting-edge AI into real-world products. I turn complex problems into elegant, automated solutions.",
+    "phone": "YOUR_PHONE_NUMBER",
+    "email": "YOUR_EMAIL",
+    "github": "YOUR_GITHUB_LINK",
+    "linkedin": "YOUR_LINKEDIN_LINK",
+    "about": "I'm a full-stack engineer with deep expertise in backend development, cloud architecture, and AI integration. With a strong foundation in Python, Django, and Node.js, I design systems that are scalable, maintainable, and production-ready. My DevOps mindset means everything I build is containerized, version-controlled, and deployed through automated CI/CD pipelines on AWS and GCP. I'm equally passionate about AI — I actively integrate LLMs, agents, and automation workflows into real projects to solve meaningful problems faster and smarter."
+  },
+
+  "techStack": [
+    {
+      "category": "Frontend",
+      "icon": "fa-solid fa-layer-group",
+      "color": "#e8a87c",
+      "skills": [
+        { "name": "HTML5", "icon": "fa-brands fa-html5" },
+        { "name": "CSS3", "icon": "fa-brands fa-css3-alt" },
+        { "name": "JavaScript", "icon": "fa-brands fa-js" }
+      ]
+    },
+    {
+      "category": "Backend",
+      "icon": "fa-solid fa-server",
+      "color": "#85c1e9",
+      "skills": [
+        { "name": "Python", "icon": "fa-brands fa-python" },
+        { "name": "Django", "icon": "fa-solid fa-d" },
+        { "name": "Node.js", "icon": "fa-brands fa-node-js" },
+        { "name": "REST APIs", "icon": "fa-solid fa-plug" }
+      ]
+    },
+    {
+      "category": "Databases",
+      "icon": "fa-solid fa-database",
+      "color": "#a9dfbf",
+      "skills": [
+        { "name": "PostgreSQL", "icon": "fa-solid fa-database" },
+        { "name": "MySQL", "icon": "fa-solid fa-database" },
+        { "name": "MongoDB", "icon": "fa-solid fa-leaf" },
+        { "name": "Redis", "icon": "fa-solid fa-bolt" }
+      ]
+    },
+    {
+      "category": "DevOps & CI/CD",
+      "icon": "fa-solid fa-gears",
+      "color": "#f1948a",
+      "skills": [
+        { "name": "GitHub", "icon": "fa-brands fa-github" },
+        { "name": "GitHub Actions", "icon": "fa-solid fa-circle-play" },
+        { "name": "Docker", "icon": "fa-brands fa-docker" },
+        { "name": "CI/CD Pipelines", "icon": "fa-solid fa-arrows-spin" }
+      ]
+    },
+    {
+      "category": "Cloud Platforms",
+      "icon": "fa-solid fa-cloud",
+      "color": "#c39bd3",
+      "skills": [
+        { "name": "AWS EC2", "icon": "fa-brands fa-aws" },
+        { "name": "AWS S3", "icon": "fa-brands fa-aws" },
+        { "name": "AWS Lambda", "icon": "fa-brands fa-aws" },
+        { "name": "CloudWatch", "icon": "fa-brands fa-aws" },
+        { "name": "GCP Compute", "icon": "fa-brands fa-google" },
+        { "name": "Cloud Storage", "icon": "fa-brands fa-google" }
+      ]
+    }
+  ],
+
+  "pipeline": [
+    {
+      "step": "01",
+      "title": "Code Push",
+      "icon": "fa-solid fa-code-branch",
+      "description": "Developer pushes code to GitHub repository. Branch protection rules ensure code review before merging to main."
+    },
+    {
+      "step": "02",
+      "title": "Actions Trigger",
+      "icon": "fa-solid fa-bolt",
+      "description": "GitHub Actions workflow is triggered automatically on push or pull request events to the main branch."
+    },
+    {
+      "step": "03",
+      "title": "Build & Test",
+      "icon": "fa-solid fa-flask",
+      "description": "Automated tests run, linting checks execute, and the application is built. Failures block the pipeline immediately."
+    },
+    {
+      "step": "04",
+      "title": "Docker Image",
+      "icon": "fa-brands fa-docker",
+      "description": "A production Docker image is built and pushed to Amazon ECR (Elastic Container Registry) with version tagging."
+    },
+    {
+      "step": "05",
+      "title": "Deploy to AWS",
+      "icon": "fa-brands fa-aws",
+      "description": "The new image is deployed to AWS ECS/EC2 with zero-downtime rolling updates and CloudWatch monitoring enabled."
+    }
+  ],
+
+  "ai": {
+    "summary": "I actively integrate AI into real-world projects — from building RAG pipelines with LangChain and vector databases to deploying AI agents that automate complex workflows. AI isn't a buzzword in my work; it's a force multiplier.",
+    "models": [
+      { "name": "GPT-4 / GPT-4o", "icon": "fa-solid fa-brain" },
+      { "name": "Claude Sonnet", "icon": "fa-solid fa-robot" },
+      { "name": "LLaMA", "icon": "fa-solid fa-fire" },
+      { "name": "Gemini", "icon": "fa-brands fa-google" },
+      { "name": "Stable Diffusion", "icon": "fa-solid fa-image" }
+    ],
+    "tools": [
+      { "name": "OpenAI APIs", "icon": "fa-solid fa-key" },
+      { "name": "LangChain", "icon": "fa-solid fa-link" },
+      { "name": "Vector Databases", "icon": "fa-solid fa-database" },
+      { "name": "Prompt Engineering", "icon": "fa-solid fa-pen-nib" },
+      { "name": "AI Automation", "icon": "fa-solid fa-gears" },
+      { "name": "AI Chatbots", "icon": "fa-solid fa-comment-dots" },
+      { "name": "AI Agents", "icon": "fa-solid fa-microchip" }
+    ],
+    "useCases": [
+      "Built a RAG-powered internal knowledge bot using LangChain + Pinecone that reduced support queries by 40%.",
+      "Automated document processing pipelines using GPT-4o for classification and data extraction at scale.",
+      "Deployed AI agents that orchestrate multi-step workflows: data ingestion → transformation → notification."
+    ]
+  },
+
+  "projects": [
+    {
+      "name": "CloudOps Automation Suite",
+      "description": "A full-stack DevOps dashboard that provisions AWS infrastructure using Terraform and monitors services via CloudWatch. Includes alerting, auto-scaling triggers, and cost analytics.",
+      "stack": ["Python", "Django", "AWS", "Terraform", "Docker", "PostgreSQL"],
+      "github": "YOUR_GITHUB_LINK",
+      "featured": true
+    },
+    {
+      "name": "AI Document Intelligence",
+      "description": "A document processing API that uses GPT-4o to extract, classify, and summarize content from PDFs and images. Built with LangChain, deployed on AWS Lambda with S3 storage.",
+      "stack": ["Python", "LangChain", "GPT-4o", "AWS Lambda", "S3", "FastAPI"],
+      "github": "YOUR_GITHUB_LINK",
+      "featured": true
+    },
+    {
+      "name": "RAG Knowledge Base API",
+      "description": "A production-ready Retrieval-Augmented Generation system with vector search (Pinecone), conversation memory, and multi-tenant support. Served via REST API with JWT auth.",
+      "stack": ["Python", "LangChain", "Pinecone", "Redis", "FastAPI", "Docker"],
+      "github": "YOUR_GITHUB_LINK",
+      "featured": false
+    },
+    {
+      "name": "E-Commerce Microservices Platform",
+      "description": "Scalable e-commerce backend with separate microservices for auth, inventory, orders, and payments. CI/CD via GitHub Actions, deployed on AWS ECS with RDS and Redis caching.",
+      "stack": ["Node.js", "Docker", "AWS ECS", "PostgreSQL", "Redis", "GitHub Actions"],
+      "github": "YOUR_GITHUB_LINK",
+      "featured": false
+    }
+  ]
+}

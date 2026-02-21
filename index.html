@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Full Stack Developer | Cloud | DevOps | AI — Personal Portfolio" />
+  <meta name="keywords" content="full stack developer, cloud engineer, devops, AI, AWS, Python, Django, Docker" />
+  <meta property="og:title" content="YOUR_NAME — Full Stack Developer" />
+  <meta property="og:description" content="Portfolio of a Full Stack Developer specializing in Cloud, DevOps, and AI." />
+  <meta property="og:type" content="website" />
+  <title>YOUR_NAME — Full Stack Developer</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" id="nav-logo" href="#hero"></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#pipeline">Pipeline</a></li>
+        <li><a href="#ai">AI</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span id="hero-badge-text">Available for opportunities</span>
+      </div>
+      <h1 id="hero-name"></h1>
+      <p class="hero-title" id="hero-title"></p>
+      <p class="hero-intro" id="hero-intro"></p>
+      <div class="hero-actions">
+        <a id="hero-github" href="#" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> View GitHub
+        </a>
+        <a href="#contact" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+      <div class="hero-scroll">
+        <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p id="about-summary"></p>
+          <div class="about-details" id="about-details"></div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+            <div class="card-stats" id="about-stats"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="stack">
+    <div class="container">
+      <div class="section-label">What I Work With</div>
+      <h2 class="section-title">Technology Stack</h2>
+      <div class="stack-grid" id="stack-grid"></div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section id="pipeline">
+    <div class="container">
+      <div class="section-label">How I Ship Code</div>
+      <h2 class="section-title">AWS CI/CD Pipeline</h2>
+      <p class="section-sub">From a single commit to a live AWS deployment — automated, tested, and monitored.</p>
+      <div class="pipeline-track" id="pipeline-track"></div>
+    </div>
+  </section>
+
+  <!-- AI -->
+  <section id="ai">
+    <div class="container">
+      <div class="section-label">Intelligent Systems</div>
+      <h2 class="section-title">AI & Machine Learning</h2>
+      <p class="section-sub" id="ai-summary"></p>
+      <div class="ai-grid">
+        <div class="ai-col">
+          <h3 class="ai-col-title"><i class="fa-solid fa-brain"></i> AI Models</h3>
+          <ul class="ai-list" id="ai-models"></ul>
+        </div>
+        <div class="ai-col">
+          <h3 class="ai-col-title"><i class="fa-solid fa-wrench"></i> Tools & Tech</h3>
+          <ul class="ai-list" id="ai-tools"></ul>
+        </div>
+        <div class="ai-col ai-col-full">
+          <h3 class="ai-col-title"><i class="fa-solid fa-lightbulb"></i> Real-World Use Cases</h3>
+          <ul class="ai-usecases" id="ai-usecases"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="section-sub">I'm open to freelance projects, full-time roles, and interesting collaborations.</p>
+      <div class="contact-cards" id="contact-cards"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span id="footer-copy"></span>
+        <div class="footer-links" id="footer-links"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
