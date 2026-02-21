@@ -7,7 +7,16 @@
     "phone": "9212782782",
     "email": "srvfoodsin@gmail.com",
     "github": "https://github.com/createwithvardan",
-    "about": "I'm Vardan Verma — a full-stack engineer with a focused approach to backend architecture, cloud infrastructure, and practical AI integration. I build primarily with Python, Django, Node.js, and FastAPI, and I treat every project with a DevOps-first mindset: containerized from day one, version-controlled, and shipped through automated CI/CD pipelines on AWS and GCP. Beyond writing code, I actively research and deploy LLMs, RAG pipelines, and multi-step AI agents into real production workflows — reducing manual overhead and enabling teams to move faster. I care about clean architecture, observable systems, and solutions that hold up under production load."
+    "about": "I'm Vardan Verma — a full-stack engineer with an M.Tech in Software Engineering from BITS Pilani. I specialize in backend architecture, cloud infrastructure, and practical AI integration. I build primarily with Python, Django, Node.js, and FastAPI, treating every project with a DevOps-first mindset: containerized from day one, version-controlled, and shipped through automated CI/CD pipelines on AWS and GCP. Beyond writing code, I actively deploy LLMs, RAG pipelines, and multi-step AI agents into real production workflows. I also consult, teach, and collaborate — I believe the best engineers invest in the people around them as much as the systems they build.",
+    "availability": {
+      "status": true,
+      "modes": [
+        { "icon": "fa-solid fa-comments", "label": "Consultation", "desc": "Available for 1:1 technical consulting for startups, SMBs, and individuals planning their tech stack or product roadmap." },
+        { "icon": "fa-solid fa-chalkboard-user", "label": "Teaching", "desc": "Structured learning sessions on Python, Django, DevOps, Cloud, and AI — for individuals or small teams." },
+        { "icon": "fa-solid fa-book-open-reader", "label": "Learning Together", "desc": "Open to collaborative projects, open-source contributions, and exploring new technologies as a team." },
+        { "icon": "fa-solid fa-rocket", "label": "Delivering", "desc": "End-to-end project delivery — from requirement gathering and architecture design to staging and production launch." }
+      ]
+    }
   },
 
   "techStack": [
@@ -85,39 +94,69 @@
         { "name": "VS Code", "icon": "devicon-vscode-plain colored" },
         { "name": "Postman", "icon": "devicon-postman-plain colored" }
       ]
+    },
+    {
+      "category": "Operating Systems",
+      "icon": "fa-solid fa-desktop",
+      "color": "#aab7b8",
+      "skills": [
+        { "name": "Windows", "icon": "devicon-windows8-original colored" },
+        { "name": "macOS", "icon": "devicon-apple-original colored" },
+        { "name": "Ubuntu / Debian", "icon": "devicon-ubuntu-plain colored" },
+        { "name": "CentOS / RHEL", "icon": "fa-brands fa-redhat" },
+        { "name": "Unix / Shell", "icon": "devicon-bash-original colored" }
+      ]
     }
   ],
 
   "pipeline": [
     {
       "step": "01",
-      "title": "Code Push",
-      "icon": "fa-solid fa-code-branch",
-      "description": "Developer pushes code to GitHub repository. Branch protection rules ensure code review before merging to main."
+      "title": "Local Dev",
+      "icon": "fa-solid fa-laptop-code",
+      "description": "Feature branches created locally. Code written, tested manually, and linted before pushing. Pre-commit hooks enforce formatting standards."
     },
     {
       "step": "02",
-      "title": "Actions Trigger",
-      "icon": "fa-solid fa-bolt",
-      "description": "GitHub Actions workflow is triggered automatically on push or pull request events to the main branch."
+      "title": "Code Push",
+      "icon": "fa-solid fa-code-branch",
+      "description": "Code pushed to GitHub. Branch protection rules require peer review before any merge to main. Pull request templates guide consistent descriptions."
     },
     {
       "step": "03",
-      "title": "Build & Test",
-      "icon": "fa-solid fa-flask",
-      "description": "Automated tests run, linting checks execute, and the application is built. Failures block the pipeline immediately."
+      "title": "CI Trigger",
+      "icon": "fa-solid fa-bolt",
+      "description": "GitHub Actions workflow fires automatically on push or PR events. Environment variables are injected securely from GitHub Secrets."
     },
     {
       "step": "04",
-      "title": "Docker Image",
-      "icon": "fa-brands fa-docker",
-      "description": "A production Docker image is built and pushed to Amazon ECR (Elastic Container Registry) with version tagging."
+      "title": "Build & Test",
+      "icon": "fa-solid fa-flask",
+      "description": "Unit tests, integration tests, and linting run in parallel. Security scanning via Trivy. Any failure immediately blocks the pipeline."
     },
     {
       "step": "05",
-      "title": "Deploy to AWS",
+      "title": "Docker Image",
+      "icon": "fa-brands fa-docker",
+      "description": "Multi-stage Docker build produces a lean production image, pushed to Amazon ECR with semantic version tags and SHA digests."
+    },
+    {
+      "step": "06",
+      "title": "Cloud Deploy",
       "icon": "fa-brands fa-aws",
-      "description": "The new image is deployed to AWS ECS/EC2 with zero-downtime rolling updates and CloudWatch monitoring enabled."
+      "description": "Rolling update deployed to AWS ECS or GCP Cloud Run. Zero-downtime switchover with automatic rollback on health check failure."
+    },
+    {
+      "step": "07",
+      "title": "Direct Hosting",
+      "icon": "fa-solid fa-server",
+      "description": "For web and client projects: deployed directly to VPS via SSH or cPanel. Nginx reverse proxy configured, SSL via Let's Encrypt, PM2 for process management."
+    },
+    {
+      "step": "08",
+      "title": "Monitor & Alert",
+      "icon": "fa-solid fa-chart-line",
+      "description": "CloudWatch dashboards track latency, error rates, and resource utilisation. Uptime Robot monitors public endpoints. Slack alerts fire on anomalies."
     }
   ],
 
@@ -146,6 +185,25 @@
       "Implemented context-aware chatbots with conversation memory and multi-tenant isolation, deployed behind a REST API with JWT auth and rate limiting."
     ]
   },
+
+  "education": [
+    {
+      "degree": "M.Tech in Software Engineering",
+      "institution": "BITS Pilani",
+      "period": "2020 – 2022",
+      "description": "Postgraduate specialization in distributed systems, cloud-native application architecture, and advanced software design patterns. Thesis focused on scalable microservices orchestration for enterprise-grade applications.",
+      "highlights": ["Distributed Systems & Cloud Architecture", "Advanced Software Design Patterns", "Microservices Thesis", "CGPA: 8.7 / 10"]
+    }
+  ],
+
+  "softSkills": [
+    { "name": "Technical Communication", "icon": "fa-solid fa-comments", "desc": "Translating complex engineering decisions into clear language for clients, stakeholders, and non-technical teams." },
+    { "name": "Problem Solving", "icon": "fa-solid fa-puzzle-piece", "desc": "Systematic approach to debugging, root cause analysis, and designing forward-looking, resilient solutions." },
+    { "name": "Mentoring & Teaching", "icon": "fa-solid fa-chalkboard-user", "desc": "Actively mentor junior developers, conduct knowledge-sharing sessions, and break down advanced concepts into digestible content." },
+    { "name": "Client Consulting", "icon": "fa-solid fa-handshake", "desc": "Translating business goals into technical roadmaps — from initial scoping and MVPs to production-ready delivery." },
+    { "name": "Team Collaboration", "icon": "fa-solid fa-people-group", "desc": "Effective in cross-functional teams, async remote setups, agile sprints, and fast-moving startup environments." },
+    { "name": "Continuous Learning", "icon": "fa-solid fa-book-open", "desc": "Self-driven learner who stays current with new frameworks, cloud services, and industry best practices through consistent practice." }
+  ],
 
   "projects": [
     {
@@ -183,6 +241,20 @@
       "github": "https://github.com/createwithvardan",
       "featured": true,
       "wip": true
+    },
+    {
+      "name": "Corporate Web Platform",
+      "description": "A full-stack business website and client portal built for a mid-sized consulting firm. Includes a public-facing marketing site, a secure client login area, project status tracking, document sharing, and an admin CMS — all deployed on a managed VPS with Nginx and automated SSL renewal.",
+      "stack": ["React", "Django", "PostgreSQL", "Nginx", "Tailwind CSS", "VPS"],
+      "github": "https://github.com/createwithvardan",
+      "featured": false
+    },
+    {
+      "name": "TallySync — ERP Integration Layer",
+      "description": "A middleware ERP platform that bridges Tally accounting data with a custom Django web dashboard. Enables real-time inventory tracking, purchase order management, vendor ledger views, and automated GST report generation — eliminating manual data entry across finance and operations teams.",
+      "stack": ["Python", "Django", "Tally API", "PostgreSQL", "Celery", "Redis"],
+      "github": "https://github.com/createwithvardan",
+      "featured": true
     }
   ]
 }

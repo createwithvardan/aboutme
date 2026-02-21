@@ -15,7 +15,7 @@
     return;
   }
 
-  const { personal, techStack, pipeline, ai, projects } = DATA;
+  const { personal, techStack, pipeline, ai, projects, education, softSkills } = DATA;
 
   /* ── HELPERS ────────────────────────────────────── */
   function el(id) { return document.getElementById(id); }
@@ -30,6 +30,7 @@
   el('hero-title').textContent = personal.title;
   el('hero-intro').textContent = personal.intro;
   el('hero-github').href = personal.github;
+  el('hero-badge-text').textContent = 'Available — Consulting · Teaching · Delivering';
 
   /* ── ABOUT ──────────────────────────────────────── */
   el('about-summary').textContent = personal.about;
@@ -51,14 +52,32 @@
   `).join('');
 
   el('about-stats').innerHTML = [
-    { num: '5+',  label: 'Years of Experience' },
-    { num: '20+', label: 'Projects Shipped' },
+    { num: '4+',  label: 'Years of Experience' },
+    { num: '15+', label: 'Projects Delivered' },
     { num: '3',   label: 'Cloud Platforms' },
     { num: '7+',  label: 'AI Models Integrated' },
   ].map(s => `
     <div class="stat-item reveal">
       <div class="stat-num">${s.num}</div>
       <div class="stat-label">${s.label}</div>
+    </div>
+  `).join('');
+
+  /* ── EDUCATION ────────────────────────────────────── */
+  el('education-list').innerHTML = education.map(edu => `
+    <div class="edu-card reveal">
+      <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="edu-body">
+        <div class="edu-degree">${edu.degree}</div>
+        <div class="edu-meta">
+          <span class="edu-institution"><i class="fa-solid fa-building-columns"></i> ${edu.institution}</span>
+          <span class="edu-period"><i class="fa-regular fa-calendar"></i> ${edu.period}</span>
+        </div>
+        <p class="edu-desc">${edu.description}</p>
+        <div class="edu-highlights">
+          ${edu.highlights.map(h => `<span class="edu-tag">${h}</span>`).join('')}
+        </div>
+      </div>
     </div>
   `).join('');
 
@@ -163,6 +182,24 @@
   el('footer-links').innerHTML = `
     <a href="${personal.github}" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
   `;
+
+  /* ── SOFT SKILLS ───────────────────────────────── */
+  el('softskills-grid').innerHTML = softSkills.map((s, i) => `
+    <div class="softskill-card reveal reveal-delay-${(i % 3) + 1}">
+      <div class="softskill-icon"><i class="${s.icon}"></i></div>
+      <div class="softskill-name">${s.name}</div>
+      <div class="softskill-desc">${s.desc}</div>
+    </div>
+  `).join('');
+
+  /* ── AVAILABILITY ────────────────────────────── */
+  el('availability-grid').innerHTML = personal.availability.modes.map((m, i) => `
+    <div class="avail-card reveal reveal-delay-${(i % 4) + 1}">
+      <div class="avail-icon"><i class="${m.icon}"></i></div>
+      <div class="avail-label">${m.label}</div>
+      <div class="avail-desc">${m.desc}</div>
+    </div>
+  `).join('');
 
   /* ─────────────────────────────────────────────────
      NAVBAR — scroll + active link highlighting
