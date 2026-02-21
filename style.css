@@ -724,6 +724,18 @@ section:nth-child(even) {
   padding: 3px 10px;
   margin-bottom: 16px;
 }
+.wip-badge {
+  color: #f39c12;
+  background: rgba(243,156,18,0.1);
+  border-color: rgba(243,156,18,0.3);
+}
+.project-card.wip {
+  border-color: rgba(243,156,18,0.25);
+}
+.project-card.wip:hover {
+  border-color: rgba(243,156,18,0.55);
+  box-shadow: 0 8px 32px rgba(243,156,18,0.08);
+}
 .project-name {
   font-family: var(--font-head);
   font-size: 1.1rem;

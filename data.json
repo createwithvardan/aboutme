@@ -175,6 +175,14 @@
       "stack": ["Node.js", "Docker", "AWS ECS", "PostgreSQL", "Redis", "GitHub Actions"],
       "github": "https://github.com/createwithvardan",
       "featured": false
+    },
+    {
+      "name": "GymCRM — Gym Management System",
+      "description": "Currently building a full-featured CRM tailored for gym businesses. Covers member onboarding, subscription & plan management, attendance tracking, trainer assignment, and revenue reporting — all through a clean Django admin and a custom REST API for future mobile integration.",
+      "stack": ["Python", "Django", "PostgreSQL", "Django REST Framework", "Celery", "Docker"],
+      "github": "https://github.com/createwithvardan",
+      "featured": true,
+      "wip": true
     }
   ]
 }

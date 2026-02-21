@@ -110,8 +110,13 @@
 
   /* ── PROJECTS ───────────────────────────────────── */
   el('projects-grid').innerHTML = projects.map((p, i) => `
-    <div class="project-card ${p.featured ? 'featured' : ''} reveal reveal-delay-${(i % 3) + 1}">
-      ${p.featured ? '<span class="project-badge">Featured</span>' : '<span class="project-badge" style="color:var(--text-3);background:var(--bg);border-color:var(--border)">Project</span>'}
+    <div class="project-card ${p.featured ? 'featured' : ''} ${p.wip ? 'wip' : ''} reveal reveal-delay-${(i % 3) + 1}">
+      ${p.wip
+        ? '<span class="project-badge wip-badge"><i class="fa-solid fa-code-commit"></i> In Progress</span>'
+        : p.featured
+          ? '<span class="project-badge">Featured</span>'
+          : '<span class="project-badge" style="color:var(--text-3);background:var(--bg);border-color:var(--border)">Project</span>'
+      }
       <div class="project-name">${p.name}</div>
       <div class="project-desc">${p.description}</div>
       <div class="project-stack">
