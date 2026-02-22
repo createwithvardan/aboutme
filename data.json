@@ -1,20 +1,20 @@
 {
   "personal": {
     "name": "Vardan Verma",
-    "title": "Full Stack Developer | Cloud | DevOps | AI",
-    "tagline": "I build production-grade systems, automate infrastructure, and ship AI-powered products that actually work.",
-    "intro": "Engineer by craft, builder by obsession. I design scalable backends, deploy cloud-natively, and integrate AI where it genuinely creates impact — not just where it sounds impressive.",
+    "title": "Full Stack Developer . Cloud . DevOps . AI",
+    "tagline": "I build real systems, automate the boring stuff, and ship AI products that actually solve problems.",
+    "intro": "I'm a hands-on engineer who loves building things that work at scale. Backends, cloud infra, CI/CD, AI. If it ships to production, I'm into it.",
     "phone": "9212782782",
     "email": "srvfoodsin@gmail.com",
     "github": "https://github.com/createwithvardan",
-    "about": "I'm Vardan Verma — a full-stack engineer with an M.Tech in Software Engineering from BITS Pilani. I specialize in backend architecture, cloud infrastructure, and practical AI integration. I build primarily with Python, Django, Node.js, and FastAPI, treating every project with a DevOps-first mindset: containerized from day one, version-controlled, and shipped through automated CI/CD pipelines on AWS and GCP. Beyond writing code, I actively deploy LLMs, RAG pipelines, and multi-step AI agents into real production workflows. I also consult, teach, and collaborate — I believe the best engineers invest in the people around them as much as the systems they build.",
+    "about": "Hey, I'm Vardan. I've got an M.Tech in Software Engineering from BITS Pilani and over 8 years of experience building full-stack products, setting up cloud infrastructure, and integrating AI into real workflows. My go-to stack is Python, Django, Node.js, and FastAPI. Every project I touch gets containerized on day one, goes through proper CI/CD, and lands on AWS or GCP. I've also been working a lot with LLMs, RAG pipelines, and AI agents lately, putting them into actual production systems (not just demos). Outside of coding, I consult with startups, teach developers, and love collaborating on interesting problems. I genuinely believe good engineers lift others up, not just build cool tech.",
     "availability": {
       "status": true,
       "modes": [
-        { "icon": "fa-solid fa-comments", "label": "Consultation", "desc": "Available for 1:1 technical consulting for startups, SMBs, and individuals planning their tech stack or product roadmap." },
-        { "icon": "fa-solid fa-chalkboard-user", "label": "Teaching", "desc": "Structured learning sessions on Python, Django, DevOps, Cloud, and AI — for individuals or small teams." },
-        { "icon": "fa-solid fa-book-open-reader", "label": "Learning Together", "desc": "Open to collaborative projects, open-source contributions, and exploring new technologies as a team." },
-        { "icon": "fa-solid fa-rocket", "label": "Delivering", "desc": "End-to-end project delivery — from requirement gathering and architecture design to staging and production launch." }
+        { "icon": "fa-solid fa-comments", "label": "Consultation", "desc": "Happy to do 1:1 tech consulting for startups, small businesses, or anyone figuring out their stack or product direction." },
+        { "icon": "fa-solid fa-chalkboard-user", "label": "Teaching", "desc": "I run focused learning sessions on Python, Django, DevOps, Cloud, and AI for individuals and small teams." },
+        { "icon": "fa-solid fa-book-open-reader", "label": "Learning Together", "desc": "Always up for collaborating on projects, contributing to open source, or exploring new tech with like-minded people." },
+        { "icon": "fa-solid fa-rocket", "label": "Delivering", "desc": "Full project delivery, start to finish. Requirements, architecture, development, staging, production. The whole thing." }
       ]
     }
   },
@@ -114,54 +114,54 @@
       "step": "01",
       "title": "Local Dev",
       "icon": "fa-solid fa-laptop-code",
-      "description": "Feature branches created locally. Code written, tested manually, and linted before pushing. Pre-commit hooks enforce formatting standards."
+      "description": "I create a feature branch, write the code, test it locally, and lint everything. Pre-commit hooks keep the formatting clean before I push."
     },
     {
       "step": "02",
       "title": "Code Push",
       "icon": "fa-solid fa-code-branch",
-      "description": "Code pushed to GitHub. Branch protection rules require peer review before any merge to main. Pull request templates guide consistent descriptions."
+      "description": "Push to GitHub with branch protection on. Nothing gets merged to main without a proper review and a decent PR description."
     },
     {
       "step": "03",
       "title": "CI Trigger",
       "icon": "fa-solid fa-bolt",
-      "description": "GitHub Actions workflow fires automatically on push or PR events. Environment variables are injected securely from GitHub Secrets."
+      "description": "GitHub Actions kicks in automatically on every push or PR. Secrets and env variables are pulled in securely, no manual steps."
     },
     {
       "step": "04",
       "title": "Build & Test",
       "icon": "fa-solid fa-flask",
-      "description": "Unit tests, integration tests, and linting run in parallel. Security scanning via Trivy. Any failure immediately blocks the pipeline."
+      "description": "Unit tests, integration tests, and linting all run in parallel. Trivy scans for vulnerabilities. If anything fails, the pipeline stops right there."
     },
     {
       "step": "05",
       "title": "Docker Image",
       "icon": "fa-brands fa-docker",
-      "description": "Multi-stage Docker build produces a lean production image, pushed to Amazon ECR with semantic version tags and SHA digests."
+      "description": "Multi-stage Docker build creates a slim production image. Gets tagged with a semantic version and pushed to Amazon ECR."
     },
     {
       "step": "06",
       "title": "Cloud Deploy",
       "icon": "fa-brands fa-aws",
-      "description": "Rolling update deployed to AWS ECS or GCP Cloud Run. Zero-downtime switchover with automatic rollback on health check failure."
+      "description": "Rolling deployment to AWS ECS or GCP Cloud Run. Zero downtime, and if the health check fails, it rolls back automatically."
     },
     {
       "step": "07",
       "title": "Direct Hosting",
       "icon": "fa-solid fa-server",
-      "description": "For web and client projects: deployed directly to VPS via SSH or cPanel. Nginx reverse proxy configured, SSL via Let's Encrypt, PM2 for process management."
+      "description": "For client-facing sites, I deploy straight to a VPS via SSH. Nginx handles reverse proxy, Let's Encrypt does SSL, PM2 keeps processes alive."
     },
     {
       "step": "08",
       "title": "Monitor & Alert",
       "icon": "fa-solid fa-chart-line",
-      "description": "CloudWatch dashboards track latency, error rates, and resource utilisation. Uptime Robot monitors public endpoints. Slack alerts fire on anomalies."
+      "description": "CloudWatch dashboards for latency and errors, Uptime Robot for endpoint monitoring, and Slack alerts when something looks off."
     }
   ],
 
   "ai": {
-    "summary": "I don't just talk about AI — I ship it. From production RAG pipelines and LangChain-powered APIs to multi-step agents that replace entire manual workflows, AI is baked into how I build. It's an engineering discipline, not a demo.",
+    "summary": "I actually build and ship AI stuff, not just talk about it. RAG pipelines, LangChain APIs, multi-step agents that replace tedious manual work. It's engineering, not a slideshow.",
     "models": [
       { "name": "GPT-4 / GPT-4o", "icon": "fa-solid fa-brain" },
       { "name": "Claude Sonnet", "icon": "fa-solid fa-robot" },
@@ -179,10 +179,10 @@
       { "name": "AI Agents", "icon": "fa-solid fa-microchip" }
     ],
     "useCases": [
-      "Built a RAG-powered internal knowledge bot using LangChain + Pinecone, reducing L1 support queries by 40% within the first month of deployment.",
-      "Engineered a document intelligence pipeline using GPT-4o that classifies, extracts, and summarizes content from PDFs at scale — handling 10k+ documents per day.",
-      "Deployed autonomous AI agents that orchestrate end-to-end workflows: data ingestion → transformation → enrichment → Slack/email notification, eliminating ~12 hours of manual work per week.",
-      "Implemented context-aware chatbots with conversation memory and multi-tenant isolation, deployed behind a REST API with JWT auth and rate limiting."
+      "Built an internal knowledge bot using LangChain + Pinecone that cut L1 support tickets by 40% in the first month.",
+      "Created a document processing pipeline with GPT-4o that classifies, extracts, and summarizes PDFs at scale. Handles 10k+ docs a day.",
+      "Set up autonomous AI agents that handle full workflows: data ingestion, transformation, enrichment, then Slack/email alerts. Saved around 12 hours of manual work every week.",
+      "Built context-aware chatbots with conversation memory and multi-tenant support. REST API with JWT auth and rate limiting."
     ]
   },
 
@@ -190,53 +190,53 @@
     {
       "degree": "M.Tech in Software Engineering",
       "institution": "BITS Pilani",
-      "period": "2020 – 2022",
-      "description": "Postgraduate specialization in distributed systems, cloud-native application architecture, and advanced software design patterns. Thesis focused on scalable microservices orchestration for enterprise-grade applications.",
+      "period": "2020 - 2022",
+      "description": "Focused on distributed systems, cloud-native app design, and software architecture patterns. Did my thesis on scalable microservices orchestration for large-scale applications.",
       "highlights": ["Distributed Systems & Cloud Architecture", "Advanced Software Design Patterns", "Microservices Thesis", "CGPA: 8.7 / 10"]
     }
   ],
 
   "softSkills": [
-    { "name": "Technical Communication", "icon": "fa-solid fa-comments", "desc": "Translating complex engineering decisions into clear language for clients, stakeholders, and non-technical teams." },
-    { "name": "Problem Solving", "icon": "fa-solid fa-puzzle-piece", "desc": "Systematic approach to debugging, root cause analysis, and designing forward-looking, resilient solutions." },
-    { "name": "Mentoring & Teaching", "icon": "fa-solid fa-chalkboard-user", "desc": "Actively mentor junior developers, conduct knowledge-sharing sessions, and break down advanced concepts into digestible content." },
-    { "name": "Client Consulting", "icon": "fa-solid fa-handshake", "desc": "Translating business goals into technical roadmaps — from initial scoping and MVPs to production-ready delivery." },
-    { "name": "Team Collaboration", "icon": "fa-solid fa-people-group", "desc": "Effective in cross-functional teams, async remote setups, agile sprints, and fast-moving startup environments." },
-    { "name": "Continuous Learning", "icon": "fa-solid fa-book-open", "desc": "Self-driven learner who stays current with new frameworks, cloud services, and industry best practices through consistent practice." }
+    { "name": "Clear Communication", "icon": "fa-solid fa-comments", "desc": "I keep things simple. Whether it's a client call or a tech decision, I make sure everyone's on the same page without the jargon." },
+    { "name": "Problem Solving", "icon": "fa-solid fa-puzzle-piece", "desc": "I dig into bugs methodically, find the root cause, and fix it properly. Quick patches are fine in emergencies, but I always follow up with a real solution." },
+    { "name": "Mentoring & Teaching", "icon": "fa-solid fa-chalkboard-user", "desc": "I enjoy helping junior devs grow. I run knowledge-sharing sessions and break down complex topics so they actually click." },
+    { "name": "Client Consulting", "icon": "fa-solid fa-handshake", "desc": "I help clients turn business goals into a clear tech plan. From scoping out the MVP to shipping to production." },
+    { "name": "Team Collaboration", "icon": "fa-solid fa-people-group", "desc": "Comfortable in cross-functional teams, remote async setups, agile sprints, and the fast-paced startup chaos." },
+    { "name": "Always Learning", "icon": "fa-solid fa-book-open", "desc": "I stay curious. New frameworks, cloud services, best practices. I'm always experimenting and picking up new skills through hands-on work." }
   ],
 
   "projects": [
     {
       "name": "CloudOps Automation Suite",
-      "description": "A full-stack DevOps dashboard that provisions and tears down AWS infrastructure via Terraform, tracks real-time service health through CloudWatch, and triggers auto-scaling rules based on custom metric thresholds. Includes a cost analytics view and Slack alerting.",
+      "description": "A DevOps dashboard I built to spin up and tear down AWS infra using Terraform. It tracks service health in real-time via CloudWatch, auto-scales based on custom metrics, shows cost breakdowns, and pings Slack when things need attention.",
       "stack": ["Python", "Django", "AWS", "Terraform", "Docker", "PostgreSQL"],
       "github": "https://github.com/createwithvardan",
       "featured": true
     },
     {
       "name": "AI Document Intelligence",
-      "description": "A scalable document processing API that uses GPT-4o to extract structured data, classify document types, and generate summaries from uploaded PDFs and images. Deployed serverlessly on AWS Lambda with S3-backed storage and async job queuing.",
+      "description": "A document processing API that uses GPT-4o to pull structured data from PDFs and images, classify doc types, and generate summaries. Runs serverless on AWS Lambda with S3 storage and async job queuing.",
       "stack": ["Python", "LangChain", "GPT-4o", "AWS Lambda", "S3", "FastAPI"],
       "github": "https://github.com/createwithvardan",
       "featured": true
     },
     {
       "name": "RAG Knowledge Base API",
-      "description": "A production-ready Retrieval-Augmented Generation system with semantic vector search via Pinecone, sliding-window conversation memory, and full multi-tenant isolation. Exposed via a REST API secured with JWT, rate limiting, and per-tenant token tracking.",
+      "description": "A production-grade RAG system with semantic search via Pinecone, conversation memory with sliding windows, and full multi-tenant isolation. Secured behind JWT with rate limiting and per-tenant token tracking.",
       "stack": ["Python", "LangChain", "Pinecone", "Redis", "FastAPI", "Docker"],
       "github": "https://github.com/createwithvardan",
       "featured": false
     },
     {
       "name": "E-Commerce Microservices Platform",
-      "description": "Modular e-commerce backend split across independent microservices for auth, product inventory, order management, and payment processing. Each service owns its own database, communicates via REST, and is independently deployable through GitHub Actions onto AWS ECS with Redis-backed session caching.",
+      "description": "A modular e-commerce backend split into independent services for auth, inventory, orders, and payments. Each service owns its own DB, talks via REST, and deploys independently through GitHub Actions to AWS ECS. Redis handles session caching.",
       "stack": ["Node.js", "Docker", "AWS ECS", "PostgreSQL", "Redis", "GitHub Actions"],
       "github": "https://github.com/createwithvardan",
       "featured": false
     },
     {
-      "name": "GymCRM — Gym Management System",
-      "description": "Currently building a full-featured CRM tailored for gym businesses. Covers member onboarding, subscription & plan management, attendance tracking, trainer assignment, and revenue reporting — all through a clean Django admin and a custom REST API for future mobile integration.",
+      "name": "GymCRM - Gym Management System",
+      "description": "Currently building a CRM for gym businesses. Covers member onboarding, subscription management, attendance tracking, trainer assignment, and revenue reports. Clean Django admin plus a REST API for future mobile app integration.",
       "stack": ["Python", "Django", "PostgreSQL", "Django REST Framework", "Celery", "Docker"],
       "github": "https://github.com/createwithvardan",
       "featured": true,
@@ -244,14 +244,14 @@
     },
     {
       "name": "Corporate Web Platform",
-      "description": "A full-stack business website and client portal built for a mid-sized consulting firm. Includes a public-facing marketing site, a secure client login area, project status tracking, document sharing, and an admin CMS — all deployed on a managed VPS with Nginx and automated SSL renewal.",
+      "description": "A complete business website and client portal for a consulting firm. Public marketing site, secure client login, project tracking, document sharing, and CMS for admins. Deployed on a managed VPS with Nginx and automated SSL.",
       "stack": ["React", "Django", "PostgreSQL", "Nginx", "Tailwind CSS", "VPS"],
       "github": "https://github.com/createwithvardan",
       "featured": false
     },
     {
-      "name": "TallySync — ERP Integration Layer",
-      "description": "A middleware ERP platform that bridges Tally accounting data with a custom Django web dashboard. Enables real-time inventory tracking, purchase order management, vendor ledger views, and automated GST report generation — eliminating manual data entry across finance and operations teams.",
+      "name": "TallySync - ERP Integration Layer",
+      "description": "Middleware that connects Tally accounting data with a custom Django dashboard. Real-time inventory, purchase orders, vendor ledgers, and automated GST reports. Basically killed the manual data entry that was eating up hours every day.",
       "stack": ["Python", "Django", "Tally API", "PostgreSQL", "Celery", "Redis"],
       "github": "https://github.com/createwithvardan",
       "featured": true

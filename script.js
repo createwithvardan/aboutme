@@ -1,5 +1,5 @@
 /* ============================================================
-   PORTFOLIO — script.js
+   PORTFOLIO - script.js
    Loads data.json and renders all sections dynamically.
    ============================================================ */
 
@@ -23,14 +23,14 @@
 
   /* ── NAV LOGO ───────────────────────────────────── */
   el('nav-logo').textContent = personal.name.split(' ')[0] + '.dev';
-  document.title = personal.name + ' — Full Stack Developer';
+  document.title = personal.name + ' - Full Stack Developer';
 
   /* ── HERO ───────────────────────────────────────── */
   el('hero-name').textContent = personal.name;
   el('hero-title').textContent = personal.title;
   el('hero-intro').textContent = personal.intro;
   el('hero-github').href = personal.github;
-  el('hero-badge-text').textContent = 'Available — Consulting · Teaching · Delivering';
+  el('hero-badge-text').textContent = 'Open for work - Consulting, Teaching, Building';
 
   /* ── ABOUT ──────────────────────────────────────── */
   el('about-summary').textContent = personal.about;
@@ -52,8 +52,8 @@
   `).join('');
 
   el('about-stats').innerHTML = [
-    { num: '4+',  label: 'Years of Experience' },
-    { num: '15+', label: 'Projects Delivered' },
+    { num: '8+',  label: 'Years of Experience' },
+    { num: '30+', label: 'Projects Delivered' },
     { num: '3',   label: 'Cloud Platforms' },
     { num: '7+',  label: 'AI Models Integrated' },
   ].map(s => `
@@ -202,7 +202,7 @@
   `).join('');
 
   /* ─────────────────────────────────────────────────
-     NAVBAR — scroll + active link highlighting
+     NAVBAR - scroll + active link highlighting
   ───────────────────────────────────────────────── */
   const navbar = document.getElementById('navbar');
   const navLinks = document.querySelectorAll('.nav-links a:not(.nav-cta)');
@@ -272,7 +272,7 @@
   });
 
   /* ─────────────────────────────────────────────────
-     TYPEWRITER EFFECT — hero name
+     TYPEWRITER EFFECT - hero name
   ───────────────────────────────────────────────── */
   const nameEl = el('hero-name');
   const fullName = personal.name;

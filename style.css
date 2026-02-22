@@ -1,5 +1,5 @@
 /* ============================================================
-   PORTFOLIO — style.css
+   PORTFOLIO - style.css
    Theme: Dark Refined / Terminal Elegance
    ============================================================ */
 
@@ -19,7 +19,7 @@
   --accent:    #4f8ef7;
   --accent-2:  #7c5cfc;
   --accent-g:  linear-gradient(135deg, #4f8ef7 0%, #7c5cfc 100%);
-  --accent-glow: rgba(79,142,247,0.25);
+  --accent-glow: rgba(79,142,247,0.3);
 
   --green:     #3dd68c;
   --orange:    #f5a623;
@@ -27,12 +27,12 @@
   --font-head: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
 
-  --radius:    12px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
+  --radius:    14px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
 
-  --shadow:    0 4px 24px rgba(0,0,0,0.4);
-  --shadow-lg: 0 8px 48px rgba(0,0,0,0.6);
+  --shadow:    0 6px 32px rgba(0,0,0,0.45);
+  --shadow-lg: 0 12px 56px rgba(0,0,0,0.55);
 
   --nav-h: 68px;
   --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
@@ -121,10 +121,21 @@ section:nth-child(even) {
   background: var(--accent-g);
   color: #fff;
   box-shadow: 0 0 0 0 var(--accent-glow);
+  position: relative;
+  overflow: hidden;
 }
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+  opacity: 0;
+  transition: var(--transition);
+}
+.btn-primary:hover::after { opacity: 1; }
 .btn-primary:hover {
-  box-shadow: 0 0 0 8px var(--accent-glow), var(--shadow);
-  transform: translateY(-2px);
+  box-shadow: 0 0 0 10px var(--accent-glow), 0 4px 20px rgba(79,142,247,0.3);
+  transform: translateY(-3px);
 }
 .btn-outline {
   background: transparent;
@@ -245,7 +256,7 @@ section:nth-child(even) {
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.18;
+  opacity: 0.22;
   pointer-events: none;
 }
 .orb-1 {
@@ -262,7 +273,7 @@ section:nth-child(even) {
 }
 @keyframes orb-drift {
   from { transform: translate(0, 0) scale(1); }
-  to   { transform: translate(40px, 30px) scale(1.08); }
+  to   { transform: translate(50px, 40px) scale(1.15); }
 }
 
 .hero-content {
@@ -303,11 +314,12 @@ section:nth-child(even) {
   font-weight: 800;
   line-height: 1.05;
   margin-bottom: 16px;
-  background: linear-gradient(135deg, var(--text) 30%, var(--text-2) 100%);
+  background: linear-gradient(135deg, #fff 20%, var(--accent) 60%, var(--accent-2) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: fade-up 0.6s 0.1s ease both;
+  filter: drop-shadow(0 0 30px rgba(79,142,247,0.15));
 }
 .hero-title {
   font-size: clamp(0.9rem, 2.5vw, 1.1rem);
@@ -414,12 +426,13 @@ section:nth-child(even) {
   padding: 32px;
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(4px);
 }
 .about-card::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  height: 2px;
+  height: 3px;
   background: var(--accent-g);
 }
 .card-icon {
@@ -435,12 +448,13 @@ section:nth-child(even) {
 .stat-item:last-child { border-bottom: none; }
 .stat-num {
   font-family: var(--font-head);
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   font-weight: 800;
   background: var(--accent-g);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.02em;
 }
 .stat-label {
   font-size: 0.82rem;
@@ -464,19 +478,20 @@ section:nth-child(even) {
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(4px);
 }
 .stack-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(79,142,247,0.05), transparent);
+  background: linear-gradient(135deg, rgba(79,142,247,0.06), rgba(124,92,252,0.03), transparent);
   opacity: 0;
   transition: var(--transition);
 }
 .stack-card:hover {
-  border-color: var(--border-2);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  border-color: rgba(79,142,247,0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 32px rgba(79,142,247,0.1), var(--shadow);
 }
 .stack-card:hover::before { opacity: 1; }
 
@@ -707,9 +722,9 @@ section:nth-child(even) {
   background: var(--accent-g);
 }
 .project-card:hover {
-  border-color: var(--border-2);
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
+  border-color: rgba(79,142,247,0.35);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.3), 0 0 0 1px rgba(79,142,247,0.15);
 }
 .project-badge {
   display: inline-block;
@@ -789,8 +804,8 @@ section:nth-child(even) {
 }
 .contact-card:hover {
   border-color: var(--accent);
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(79,142,247,0.12), var(--shadow);
 }
 .contact-icon {
   width: 52px; height: 52px;
